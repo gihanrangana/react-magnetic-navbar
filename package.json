@@ -1,0 +1,72 @@
+{
+  "name": "vite-express-ssr-ts",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch server --watch server.ts --exec tsx server.ts",
+    "build": "npm run clean && npm run build:client && npm run build:server",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "build:client": "vite build --outDir dist/app/client",
+    "build:server": "tsc -p tsconfig.server.json && vite build --ssr src/entry-server.tsx --outDir dist/entry",
+    "clean": "rimraf dist",
+    "serve": "cross-env NODE_ENV=production node ./dist/app/server"
+  },
+  "dependencies": {
+    "@loadable/component": "^5.16.3",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.4",
+    "react-router-dom": "^6.21.2"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/express": "^4.17.21",
+    "@types/loadable__component": "^5.13.8",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/serve-static": "^1.15.5",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "nodemon": "^3.0.2",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.7",
+    "serve-static": "^1.15.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8",
+    "npm": ">=9"
+  },
+  "keywords": [
+    "Express.js TypeScript SSR",
+    "Vite SSR Template",
+    "Server-Side Rendering with Vite and Express",
+    "TypeScript SSR Framework",
+    "Vite Express.js Boilerplate",
+    "Node.js TypeScript Vite Starter",
+    "Express Vite Server Rendering",
+    "TypeScript Vite SSR Example",
+    "Full-Stack JavaScript SSR",
+    "SEO-Friendly SSR Template",
+    "Modern Web App SSR Vite",
+    "Isomorphic JavaScript Vite Express",
+    "Express.js Vite TypeScript Setup",
+    "SSR Web Application with TypeScript",
+    "High-Performance SSR with Vite"
+  ]
+}
