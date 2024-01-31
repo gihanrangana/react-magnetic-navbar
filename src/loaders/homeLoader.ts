@@ -1,7 +1,7 @@
 import { rand, sleep } from "@utils/utils";
 
 const homeLoader = async () => {
-    await sleep();
+    // await sleep();
     return { data: `Home loader - random value ${rand()}` };
 }
 

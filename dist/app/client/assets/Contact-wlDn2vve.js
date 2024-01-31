@@ -1,0 +1,1 @@
+import{u as s,r,j as t}from"./index-9ivgH-OI.js";const n=a=>{const e=s();return r.useEffect(()=>{e.setTitle("Contact")},[e]),t.jsx(t.Fragment,{children:t.jsx("h1",{children:"Contact Page"})})};export{n as default};

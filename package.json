@@ -1,7 +1,7 @@
 {
-  "name": "vite-express-ssr-ts",
+  "name": "react-magnetic-navbar",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "nodemon --watch server --watch server.ts --exec tsx server.ts",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@loadable/component": "^5.16.3",
     "express": "^4.18.2",
+    "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
@@ -67,6 +68,10 @@
     "Isomorphic JavaScript Vite Express",
     "Express.js Vite TypeScript Setup",
     "SSR Web Application with TypeScript",
-    "High-Performance SSR with Vite"
+    "High-Performance SSR with Vite",
+    "React navigation",
+    "react router v6",
+    "react navbar",
+    "react magnetic navbar"
   ]
 }
